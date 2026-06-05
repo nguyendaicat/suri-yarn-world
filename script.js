@@ -1,133 +1,133 @@
-const products = [
+const sanPham = [
   {
-    name: "Big Marshmallow Bear",
-    category: "Thú Bông Len",
-    status: "Kỷ Niệm",
-    size: "50cm",
-    time: "3 tuần",
-    year: "2026",
-    story: "Một bạn gấu len lớn, đánh dấu lúc con bắt đầu làm được sản phẩm phức tạp và cần nhiều kiên nhẫn hơn.",
-    image: "assets/placeholder-bear.svg",
-    bg: "#ffe2a8"
+    ten: "Bạn Gấu Kẹo Bông",
+    loai: "thu-bong",
+    trangThai: "Kỷ niệm",
+    kichThuoc: "50cm",
+    thoiGian: "3 tuần",
+    nam: "2026",
+    cauChuyen: "Một bạn gấu len lớn, đánh dấu lúc con bắt đầu làm được sản phẩm phức tạp và cần nhiều kiên nhẫn hơn.",
+    hinhAnh: "assets/gau-len.svg",
+    mauNen: "#ffe2a8"
   },
   {
-    name: "Forest Cloak",
-    category: "Đồ Mặc",
-    status: "Trưng Bày",
-    size: "Mặc được",
-    time: "Nhiều ngày",
-    year: "2026",
-    story: "Một chiếc áo choàng có thể mặc được. Món này nên được lưu lại như cột mốc về kỹ năng và độ bền.",
-    image: "assets/placeholder-cloak.svg",
-    bg: "#cfe9dc"
+    ten: "Áo Choàng Rừng Xanh",
+    loai: "do-mac",
+    trangThai: "Trưng bày",
+    kichThuoc: "Mặc được",
+    thoiGian: "Vài ngày",
+    nam: "2026",
+    cauChuyen: "Một chiếc áo choàng có thể mặc được. Món này nên được lưu lại như cột mốc về kỹ năng và độ bền.",
+    hinhAnh: "assets/ao-choang.svg",
+    mauNen: "#cfe9dc"
   },
   {
-    name: "Tiny Bunny Friend",
-    category: "Đồ Lưu Niệm",
-    status: "Có Thể Nhận Nuôi",
-    size: "Nhỏ",
-    time: "1 ngày",
-    year: "2026",
-    story: "Một bạn nhỏ dễ thương, phù hợp làm quà lưu niệm hoặc nhận nuôi.",
-    image: "assets/placeholder-bunny.svg",
-    bg: "#e6ddf4"
+    ten: "Bạn Thỏ Bé Xíu",
+    loai: "luu-niem",
+    trangThai: "Có thể nhận nuôi",
+    kichThuoc: "Nhỏ",
+    thoiGian: "1 ngày",
+    nam: "2026",
+    cauChuyen: "Một bạn nhỏ dễ thương, phù hợp làm quà lưu niệm hoặc nhận nuôi.",
+    hinhAnh: "assets/tho-len.svg",
+    mauNen: "#e6ddf4"
   },
   {
-    name: "Sunny Chick",
-    category: "Đồ Lưu Niệm",
-    status: "Có Thể Nhận Nuôi",
-    size: "Nhỏ",
-    time: "1 ngày",
-    year: "2026",
-    story: "Một món nhỏ tươi sáng, dễ trưng bày trên bàn học hoặc tặng bạn bè.",
-    image: "assets/placeholder-chick.svg",
-    bg: "#f8eadf"
+    ten: "Gà Con Nắng Vàng",
+    loai: "luu-niem",
+    trangThai: "Có thể nhận nuôi",
+    kichThuoc: "Nhỏ",
+    thoiGian: "1 ngày",
+    nam: "2026",
+    cauChuyen: "Một món nhỏ tươi sáng, dễ trưng bày trên bàn học hoặc tặng bạn bè.",
+    hinhAnh: "assets/ga-con.svg",
+    mauNen: "#f8eadf"
   },
   {
-    name: "Practice Piece No. 1",
-    category: "Thú Bông Len",
-    status: "Đang Học",
-    size: "Vừa",
-    time: "Không rõ",
-    year: "2025",
-    story: "Không cần hoàn hảo. Đây là loại sản phẩm nên giữ lại để sau này nhìn thấy rõ mình đã tiến bộ thế nào.",
-    image: "assets/placeholder-yarn.svg",
-    bg: "#ffd8cc"
+    ten: "Mảnh Luyện Tập Số 1",
+    loai: "thu-bong",
+    trangThai: "Đang học",
+    kichThuoc: "Vừa",
+    thoiGian: "Chưa ghi",
+    nam: "2025",
+    cauChuyen: "Không cần hoàn hảo. Đây là loại sản phẩm nên giữ lại để sau này nhìn thấy rõ mình đã tiến bộ thế nào.",
+    hinhAnh: "assets/cuon-len.svg",
+    mauNen: "#ffd8cc"
   },
   {
-    name: "Gift for Someone",
-    category: "Đồ Lưu Niệm",
-    status: "Đã Tặng",
-    size: "Nhỏ",
-    time: "Cuối tuần",
-    year: "2026",
-    story: "Handmade không chỉ là món đồ. Nó là thời gian và tình cảm được đặt vào từng mũi len.",
-    image: "assets/placeholder-heart.svg",
-    bg: "#f6d7df"
+    ten: "Món Quà Nhỏ",
+    loai: "luu-niem",
+    trangThai: "Đã tặng",
+    kichThuoc: "Nhỏ",
+    thoiGian: "Cuối tuần",
+    nam: "2026",
+    cauChuyen: "Handmade không chỉ là món đồ. Nó là thời gian và tình cảm được đặt vào từng mũi len.",
+    hinhAnh: "assets/trai-tim.svg",
+    mauNen: "#f6d7df"
   }
 ];
 
-const galleryGrid = document.querySelector("#galleryGrid");
-const filterButtons = document.querySelectorAll(".filter");
-const navToggle = document.querySelector(".nav-toggle");
-const siteNav = document.querySelector(".site-nav");
+const luoiBoSuuTap = document.querySelector("#galleryGrid");
+const nutLoc = document.querySelectorAll(".filter");
+const nutMenu = document.querySelector(".nav-toggle");
+const menu = document.querySelector(".site-nav");
 
-function renderProducts(filter = "all") {
-  const visibleProducts = filter === "all"
-    ? products
-    : products.filter(product => product.category === filter);
+function hienThiSanPham(boLoc = "all") {
+  const danhSachHienThi = boLoc === "all"
+    ? sanPham
+    : sanPham.filter(item => item.loai === boLoc);
 
-  galleryGrid.innerHTML = visibleProducts.map(product => `
+  luoiBoSuuTap.innerHTML = danhSachHienThi.map(item => `
     <article class="product-card">
-      <div class="product-image" style="--card-bg: ${product.bg}">
-        <img src="${product.image}" alt="${product.name}">
+      <div class="product-image" style="--card-bg: ${item.mauNen}">
+        <img src="${item.hinhAnh}" alt="${item.ten}">
       </div>
       <div class="product-content">
         <div class="product-meta">
-          <span class="product-category">${labelCategory(product.category)}</span>
-          <span class="product-status">${product.status}</span>
+          <span class="product-category">${tenLoai(item.loai)}</span>
+          <span class="product-status">${item.trangThai}</span>
         </div>
-        <h3>${product.name}</h3>
-        <p>${product.story}</p>
+        <h3>${item.ten}</h3>
+        <p>${item.cauChuyen}</p>
         <div class="product-details">
-          <span>${product.size}</span>
-          <span>${product.time}</span>
-          <span>${product.year}</span>
+          <span>${item.kichThuoc}</span>
+          <span>${item.thoiGian}</span>
+          <span>${item.nam}</span>
         </div>
       </div>
     </article>
   `).join("");
 }
 
-function labelCategory(category) {
-  const labels = {
-    plushie: "Thú Bông Len",
-    wearable: "Đồ Mặc",
-    souvenir: "Đồ Lưu Niệm"
+function tenLoai(loai) {
+  const ten = {
+    "thu-bong": "Thú bông len",
+    "do-mac": "Đồ mặc",
+    "luu-niem": "Đồ lưu niệm"
   };
-  return labels[category] || category;
+  return ten[loai] || loai;
 }
 
-filterButtons.forEach(button => {
+nutLoc.forEach(button => {
   button.addEventListener("click", () => {
-    filterButtons.forEach(item => item.classList.remove("active"));
+    nutLoc.forEach(item => item.classList.remove("active"));
     button.classList.add("active");
-    renderProducts(button.dataset.filter);
+    hienThiSanPham(button.dataset.filter);
   });
 });
 
-navToggle.addEventListener("click", () => {
-  const isOpen = siteNav.classList.toggle("open");
-  navToggle.setAttribute("aria-expanded", String(isOpen));
+nutMenu.addEventListener("click", () => {
+  const dangMo = menu.classList.toggle("open");
+  nutMenu.setAttribute("aria-expanded", String(dangMo));
 });
 
-siteNav.querySelectorAll("a").forEach(link => {
+menu.querySelectorAll("a").forEach(link => {
   link.addEventListener("click", () => {
-    siteNav.classList.remove("open");
-    navToggle.setAttribute("aria-expanded", "false");
+    menu.classList.remove("open");
+    nutMenu.setAttribute("aria-expanded", "false");
   });
 });
 
 document.querySelector("#year").textContent = new Date().getFullYear();
 
-renderProducts();
+hienThiSanPham();

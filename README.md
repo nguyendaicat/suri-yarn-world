@@ -1,23 +1,29 @@
-# Little Yarn World
+# Thế Giới Len Nhỏ
 
-Static website for a small handmade yarn portfolio / memory museum.
+Website tĩnh để lưu giữ sản phẩm đan/móc len handmade của bé.
 
-## Edit content
+## Cách sửa nhanh
 
-- Main copy: `index.html`
-- Product list: `script.js`
-- Visual style: `styles.css`
-- Placeholder images: `assets/`
+- Nội dung chính: `index.html`
+- Danh sách sản phẩm: `script.js`
+- Màu sắc / giao diện: `styles.css`
+- Ảnh minh họa: thư mục `assets/`
+
+## Những chỗ nên đổi trước khi deploy
+
+1. Đổi tên `Thế Giới Len Nhỏ` thành tên thật của website hoặc tên thương hiệu của bé.
+2. Đổi email `hello@example.com` trong `index.html`.
+3. Sửa danh sách `sanPham` trong `script.js`.
+4. Thay ảnh SVG trong `assets/` bằng ảnh thật của sản phẩm.
 
 ## Deploy
 
-Upload the whole folder to any static hosting:
+Upload toàn bộ thư mục này lên hosting tĩnh:
+
 - GitHub Pages
 - Netlify
 - Vercel
 - Cloudflare Pages
-- Traditional hosting
+- Hosting thường
 
-## Replace contact email
-
-Find `hello@example.com` inside `index.html` and replace it with the parent-managed email.
+Chỉ cần mở file `index.html` là xem được website.
