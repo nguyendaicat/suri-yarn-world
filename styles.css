@@ -27,7 +27,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Be Vietnam Pro", "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-family: "Noto Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
   color: var(--ink);
   background:
     radial-gradient(circle at 12% 8%, rgba(255, 226, 168, 0.48), transparent 30%),
@@ -609,4 +609,74 @@ h3 {
   .button:hover {
     transform: translateY(-2px);
   }
+}
+body {
+  font-weight: 400;
+  letter-spacing: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-size: clamp(2.6rem, 6.2vw, 5.4rem);
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 3.4vw, 3.1rem);
+  line-height: 1.18;
+  letter-spacing: -0.015em;
+  font-weight: 750;
+}
+
+h3 {
+  line-height: 1.32;
+  letter-spacing: -0.005em;
+  font-weight: 700;
+}
+
+.hero-text,
+.section-heading p,
+.intro p,
+.adopt-copy p,
+.contact-section p,
+.hero-card-content p,
+.story-card p,
+.fund-card p,
+.product-card p,
+.adopt-note p,
+.site-footer p {
+  line-height: 1.8;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.eyebrow,
+.section-kicker {
+  letter-spacing: 0.06em;
+  line-height: 1.5;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.site-nav a,
+.button,
+.filter,
+.tag,
+.product-category,
+.product-status {
+  letter-spacing: 0;
+  font-weight: 600;
+}
+
+.brand strong {
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+
+.brand small {
+  letter-spacing: 0;
+  font-weight: 400;
 }
