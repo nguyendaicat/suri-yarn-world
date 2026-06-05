@@ -1,10 +1,10 @@
 const products = [
   {
     name: "Big Marshmallow Bear",
-    category: "plushie",
-    status: "Memory",
+    category: "Thú Bông Len",
+    status: "Kỷ Niệm",
     size: "50cm",
-    time: "3 weeks",
+    time: "3 tuần",
     year: "2026",
     story: "Một bạn gấu len lớn, đánh dấu lúc con bắt đầu làm được sản phẩm phức tạp và cần nhiều kiên nhẫn hơn.",
     image: "assets/placeholder-bear.svg",
@@ -12,10 +12,10 @@ const products = [
   },
   {
     name: "Forest Cloak",
-    category: "wearable",
-    status: "Portfolio",
-    size: "Wearable",
-    time: "Several days",
+    category: "Đồ Mặc",
+    status: "Trưng Bày",
+    size: "Mặc được",
+    time: "Nhiều ngày",
     year: "2026",
     story: "Một chiếc áo choàng có thể mặc được. Món này nên được lưu lại như cột mốc về kỹ năng và độ bền.",
     image: "assets/placeholder-cloak.svg",
@@ -23,10 +23,10 @@ const products = [
   },
   {
     name: "Tiny Bunny Friend",
-    category: "souvenir",
-    status: "Adoptable",
-    size: "Small",
-    time: "1 day",
+    category: "Đồ Lưu Niệm",
+    status: "Có Thể Nhận Nuôi",
+    size: "Nhỏ",
+    time: "1 ngày",
     year: "2026",
     story: "Một bạn nhỏ dễ thương, phù hợp làm quà lưu niệm hoặc nhận nuôi.",
     image: "assets/placeholder-bunny.svg",
@@ -34,10 +34,10 @@ const products = [
   },
   {
     name: "Sunny Chick",
-    category: "souvenir",
-    status: "Adoptable",
-    size: "Small",
-    time: "1 day",
+    category: "Đồ Lưu Niệm",
+    status: "Có Thể Nhận Nuôi",
+    size: "Nhỏ",
+    time: "1 ngày",
     year: "2026",
     story: "Một món nhỏ tươi sáng, dễ trưng bày trên bàn học hoặc tặng bạn bè.",
     image: "assets/placeholder-chick.svg",
@@ -45,10 +45,10 @@ const products = [
   },
   {
     name: "Practice Piece No. 1",
-    category: "plushie",
-    status: "Learning",
-    size: "Medium",
-    time: "Unknown",
+    category: "Thú Bông Len",
+    status: "Đang Học",
+    size: "Vừa",
+    time: "Không rõ",
     year: "2025",
     story: "Không cần hoàn hảo. Đây là loại sản phẩm nên giữ lại để sau này nhìn thấy rõ mình đã tiến bộ thế nào.",
     image: "assets/placeholder-yarn.svg",
@@ -56,10 +56,10 @@ const products = [
   },
   {
     name: "Gift for Someone",
-    category: "souvenir",
-    status: "Gifted",
-    size: "Small",
-    time: "Weekend",
+    category: "Đồ Lưu Niệm",
+    status: "Đã Tặng",
+    size: "Nhỏ",
+    time: "Cuối tuần",
     year: "2026",
     story: "Handmade không chỉ là món đồ. Nó là thời gian và tình cảm được đặt vào từng mũi len.",
     image: "assets/placeholder-heart.svg",
@@ -101,9 +101,9 @@ function renderProducts(filter = "all") {
 
 function labelCategory(category) {
   const labels = {
-    plushie: "Plushie",
-    wearable: "Wearable",
-    souvenir: "Souvenir"
+    plushie: "Thú Bông Len",
+    wearable: "Đồ Mặc",
+    souvenir: "Đồ Lưu Niệm"
   };
   return labels[category] || category;
 }
