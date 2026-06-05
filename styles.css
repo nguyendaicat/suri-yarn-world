@@ -27,7 +27,7 @@ html {
 
 body {
   margin: 0;
-  font-family: ui-rounded, "SF Pro Rounded", "Nunito", "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-family: "Be Vietnam Pro", "Segoe UI", system-ui, -apple-system, sans-serif;
   color: var(--ink);
   background:
     radial-gradient(circle at 12% 8%, rgba(255, 226, 168, 0.48), transparent 30%),
@@ -180,15 +180,15 @@ p {
 
 h1 {
   margin-bottom: 22px;
-  font-size: clamp(3rem, 8vw, 6.8rem);
-  line-height: 0.93;
-  letter-spacing: -0.075em;
+  font-size: clamp(2.8rem, 7vw, 6rem);
+  line-height: 1.04;
+  letter-spacing: -0.045em;
 }
 
 h2 {
-  font-size: clamp(2rem, 4vw, 3.8rem);
-  line-height: 1;
-  letter-spacing: -0.055em;
+  font-size: clamp(1.9rem, 3.8vw, 3.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
   margin-bottom: 18px;
 }
 
